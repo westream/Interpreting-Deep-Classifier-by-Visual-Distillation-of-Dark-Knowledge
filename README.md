@@ -30,7 +30,7 @@ class Knowledge:
 
         # Generate teacher's label
         # np.argmax(logit.numpy(), axis=1) ：axis=0 ，对列求最大，行不变 , shape = H*1；
-        #                                                                           axis=1 ，对行求最大，列不变 ,  shape = 1*W
+        #                                    axis=1 ，对行求最大，列不变 , shape = 1*W；
         self.label_pred_np = np.argmax(logit.numpy(), axis=1)
         
         # N - #data points, H
