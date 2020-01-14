@@ -4,25 +4,32 @@
 >>  resentations,so as to “see what the network sees”.   However, standard dimension   
 >>  reduction methods in this setting can yield uninformative or even misleading visualizations.  
 
-## Contribution
+##  Contribution
 >>  Present DarkSight, which visually summarizes the predictions of a classifier in a way  
 >>  inspired by notion of dark knowledge.
 
 >>  DarkSight embeds the data points into a low-dimensional space such that it is easy   
 >>  to compress the deep classifier into a simpler one, essentially combining model   
- >> compression and dimension reduction.
+>>  compression and dimension reduction.
 
-## Methods   
-### 1.  Goal   
->>>  interpret the predictions of a black-box classifier by visualizing them in a lower   
+##  Methods   
+###  1.  Goal   
+>>>  interpret the predictions of a black-box classifier by visualizing them in a lower    
 >>>  dimensional space.     
-### 2.  Important parameters    
-#### a.  Validation set: $D_V = {(x_i , c_i )}$
+###  2.  Important parameters     
+####  a.  Validation set: $D_V = {(x_i , c_i )}$   
+####  b.  Prediction vector: $π_i = P_T (c_i |x_i )$ ,prediction vector produced by the teacher    
+####  c.  Low-dimensional embedding: $y_i$ ,represent each  $x_i$ in the visualization embedding
 
-## Code treasure
-### 1.  Class Knowledge  
->>> input : teacher logit
->>> output: log(softmax(teacher logit_div_by_T))
+
+
+
+
+
+##  Code treasure
+###  1.  Class Knowledge  
+>>>  input : teacher logit
+>>>  output: log(softmax(teacher logit_div_by_T))
 
 ```python
 class Knowledge:
