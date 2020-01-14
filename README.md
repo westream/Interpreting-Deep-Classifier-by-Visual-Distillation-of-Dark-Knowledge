@@ -20,7 +20,7 @@
 ####  a.  Validation set: $D_V = {(x_i , c_i )}$   
 ####  b.  Prediction vector: $π_i = P_T (c_i |x_i )$ ,prediction vector produced by the teacher    
 ####  c.  Low-dimensional embedding: $y_i$ ,represent each  $x_i$ in the visualization embedding
-
+####  d.  student classifier: $P_S(·|y; θ)$
 
 
 
