@@ -28,7 +28,7 @@
 
 ##  Code treasure
 ###  1.  Class Knowledge  
->>>  input : teacher logit
+>>>  input : teacher logit  
 >>>  output: log(softmax(teacher logit_div_by_T))
 
 ```python
